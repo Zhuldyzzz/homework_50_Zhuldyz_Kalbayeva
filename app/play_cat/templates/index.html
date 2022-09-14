@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body >
+       <div class="form" style="display:grid;place-items:center;margin-top:150px;">
+       
+        <form action="/action_page/" method="POST">
+            {% csrf_token %}
+            <div class="form">
+            <label for="fname">Вас приветствует симулятор кота</label><br>
+            <p>для начала введите имя кота</p>
+            <div class="btn_sub" style="margin:30px;">
+            <input type="text" id="name" name="cat_name"><br>
+                <input type="submit" class="btn" style="margin:20px;" value="Создать">
+            </div>
+        </div>
+        </form> 
+       </div>
+    </body>
+</html>
